@@ -18,11 +18,9 @@ public class Create_table {
          System.out.println("Opened database successfully");
 
          stmt = c.createStatement();
-         String sql = "CREATE TABLE COMPANY " +
+         String sql = "CREATE TABLE EMPLOYEE " +
             "(ID INT PRIMARY KEY     NOT NULL," +
-            " NAME           TEXT    NOT NULL, " +
-            " AGE            INT     NOT NULL, " +
-            " ADDRESS        CHAR(50), " +
+            " empNAME           TEXT    NOT NULL, " +
             " SALARY         REAL)";
          stmt.executeUpdate(sql);
          stmt.close();

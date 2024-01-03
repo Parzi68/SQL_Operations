@@ -15,20 +15,20 @@ public class Insert_Values {
          System.out.println("Opened database successfully");
 
          stmt = c.createStatement();
-         String sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) "
-            + "VALUES (1, 'test', 22, 'japan', 32000.00 );";
+         String sql = "INSERT INTO EMPLOYEE (ID,empNAME,SALARY) "
+            + "VALUES (1, 'test', 32000.00 );";
          stmt.executeUpdate(sql);
 
-         sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) "
-            + "VALUES (2, 'Allen', 25, 'Texas', 15000.00 );";
+         sql = "INSERT INTO EMPLOYEE (ID,empNAME,SALARY) "
+            + "VALUES (2, 'Allen', 15000.00 );";
          stmt.executeUpdate(sql);
 
-         sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) "
-            + "VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );";
+         sql = "INSERT INTO EMPLOYEE (ID,empNAME,SALARY) "
+            + "VALUES (3, 'Teddy', 20000.00 );";
          stmt.executeUpdate(sql);
 
-         sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) "
-            + "VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );";
+         sql = "INSERT INTO EMPLOYEE (ID,empNAME,SALARY) "
+            + "VALUES (4, 'Mark', 65000.00 );";
          stmt.executeUpdate(sql);
 
          stmt.close();
